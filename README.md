@@ -2,7 +2,7 @@
 
 |  Section |  Link |
 |------------|--------|
-|  Features | [Go to Features](#features) |
+| Features | [Go to Features](#features) |
 | Design | [Go to Design](#design) |
 | Preview | [Go to Preview](#preview) |
 | Installation | [Go to Installation](#installation) |
@@ -13,9 +13,9 @@
 | Credits | [Go to Credits](#credits) |
 
 
-This repository contains a **Scriptable widget** for the Scriptable app that displays Islamic prayer times for **Bosnia and Herzegovina and Sandžak**. The widget uses the **Vaktija.ba API** to fetch accurate prayer times but is **not affiliated** with Vaktija.ba in any way.  
+This repository contains a **Scriptable widgets** for the Scriptable app available for iPhone and iPad devices that displays Islamic prayer times for **Bosnia and Herzegovina and Sandžak**. The widgets uses the **Vaktija.ba API** to fetch accurate prayer times but is **not affiliated** with Vaktija.ba in any way.  
 
-Designed for a **horizontal layout**, the widget follows the **original Vaktija.ba colors and feel**, providing a seamless and familiar experience.  
+Designed for a **horizontal layout** or **regular layour**, the widgets follows the **original Vaktija.ba colors and feel**, providing a seamless and familiar experience.  
 
 > The default city in the widget is **Sarajevo (ID 77)**. To change the city code, visit [City Codes](#city-codes).
 
@@ -62,8 +62,21 @@ The **🕒 last fetched time** at the bottom of the left column shows when the A
 
 ## Preview
 
+There are currently two types of widgets available, both designed to enhance your experience. Regardless of which one you choose, the installation process remains the same.
+
+### Regular widget
+
+The widget follows a horizontal layout and is available in two file formats: **Vaktija.ba.scriptable** and **Vaktija.ba.scriptable.js**.
+It provides additional details such as the selected location, a countdown timer to the next prayer, and the Hijri calendar date. However, it requires a full horizontal layout on iPhone to display all information properly.
+
 ![Widget Design](design.jpg)
 ![Widget Preview](widget-preview.jpg)
+
+### Mini widget
+
+Regular layout. File name **Vaktija Mini Widget.scriptable** and **Vaktija Mini Widget.scriptable.js**.
+It does not display details such as the selected location or countdown timer, but **it visually indicates the next prayer time using circles** - only the upcoming prayer will have a filled circle, while the others remain empty.
+![Mini Widget](mini-widget.jpg)
 
 
 ## Installation  
@@ -74,14 +87,14 @@ First, download the Scriptable app from the App Store: [Scriptable on App Store]
 *To be added*  
 
 ### Install from File  
-1. Download the file **Vaktija.ba.scriptable** from this repository.  
+1. Download the file **Vaktija.ba.scriptable** or **Vaktija Mini Widget.scriptable** from this repository.  
 2. Open the **Scriptable** app on your iPhone.  
 3. Tap the **+** button to create a new script.  
 4. Select **Import Script**, then choose **Vaktija.ba.scriptable**.  
 5. Save the script and add the widget to your home screen.  
 
 ### Manual Install  
-1. Open the file **Vaktija.ba.scriptable.js** in this repository.  
+1. Open the file **Vaktija.ba.scriptable.js** or **Vaktija Mini Widget.scriptable.js** in this repository.  
 2. Copy the entire content of the file.  
 3. Open the **Scriptable** app on your iPhone.  
 4. Tap the **+** button to create a new script.  
@@ -94,12 +107,12 @@ First, download the Scriptable app from the App Store: [Scriptable on App Store]
     -   Long press on your home screen until the apps start jiggling.
     -   Tap the **“+” button** in the top left corner.
     -   Search for **Scriptable** and select it.
-    -   Choose the **medium-sized widget** and add it.
+    -   Choose the **right size for a widget** and add it.
   
  2.  **Set up the widget:**
    
-	   -    Tap on the widget while in jiggle mode.
-	   -    Choose the script **"Vaktija.ba"** from the list.
+	   -    Tap on the edit widget while in jiggle mode.
+	   -    Choose the script **"Vaktija.ba"** or **Vaktija Mini Widget"** from the list.
 	   -    Ensure the **widget refreshes properly** by allowing background updates.
 
 ## Customization
