@@ -126,14 +126,14 @@ You can modify the script inside **Scriptable** to adjust certain aspects:
 **⚠️ Note:** Ensure that any modifications follow Scriptable’s syntax rules to avoid errors.
 
 ### City codes
-You can find the available city codes here: https://api.vaktija.ba/vaktija/v1/lokacije
+You can find the available city codes here: [city-codes.md](city-codes.md) or on the official site of Vaktija.ba: https://api.vaktija.ba/vaktija/v1/lokacije  
 To change the city in the script, find your city ID from the link above and modify the following line in the script:
 
     const  CITY  =  "77";
 
 **City ID 77** is for **Sarajevo**.
 
-Replace `"77"` with the ID of your preferred city to display prayer times for that location.
+Replace `77` with the ID of your preferred city to display prayer times for that location.
 
 
 ## Issues
