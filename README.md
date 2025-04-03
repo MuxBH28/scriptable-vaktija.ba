@@ -15,18 +15,20 @@
 
 This repository contains a **Scriptable widgets** for the Scriptable app available for iPhone and iPad devices that displays Islamic prayer times for **Bosnia and Herzegovina and Sandžak**. The widgets uses the **Vaktija.ba API** to fetch accurate prayer times but is **not affiliated** with Vaktija.ba in any way.  
 
-Designed for a **horizontal layout** or **regular layour**, the widgets follows the **original Vaktija.ba colors and feel**, providing a seamless and familiar experience.  
+Designed for a **horizontal layout**, **regular layout** and **lockscreen layout**, the widgets follows the **original Vaktija.ba colors and feel**, providing a seamless and familiar experience.  
 
-> The default city in the widget is **Sarajevo (ID 77)**. To change the city code, visit [City Codes](#city-codes).
+> ℹ️ The default city in the widget is **Sarajevo (ID 77)**. To change the city code, visit [City Codes](#city-codes).
 
 ## Features
 
 -   Displays Islamic prayer times for Bosnia and Herzegovina and Sandžak.
 -   Uses **Vaktija.ba API** for accurate prayer times.
--   Designed for a **horizontal layout** with a modern and clean look.
--   Shows a **countdown to the next prayer** for better time tracking.
+-   Three types of layout with a modern and clean look.
+-   Shows a **countdown to the next prayer** for better time tracking*.
 -   Uses the **original Vaktija.ba colors and feel**.
 -   Automatically updates at **00:00** and when the widget is loaded.
+
+**⚠️ Note:** Countdown problems exists due Apple widget limitations.
 
 ## Design  
 
@@ -78,6 +80,13 @@ Regular layout. File name **Vaktija Mini Widget.scriptable** and **Vaktija Mini 
 It does not display details such as the selected location or countdown timer, but **it visually indicates the next prayer time using circles** - only the upcoming prayer will have a filled circle, while the others remain empty.
 ![Mini Widget](mini-widget.jpg)
 
+### Lockscreen widget
+
+Layout focused for lockscreens. File name **Lockscreen Vaktija.scriptable** and **Lockscreen Vaktija.scriptable.js**.
+**It displays only the name and time of the next prayer**.
+![Lockscreen Vaktija](lockscreen-vaktija.jpg)
+**⚠️ Note:** Use horizontal lockscreen layout.
+
 
 ## Installation  
 
@@ -87,14 +96,14 @@ First, download the Scriptable app from the App Store: [Scriptable on App Store]
 *To be added*  
 
 ### Install from File  
-1. Download the file **Vaktija.ba.scriptable** or **Vaktija Mini Widget.scriptable** from this repository.  
+1. Download the file **Vaktija.ba.scriptable**, **Vaktija Mini Widget.scriptable** or **Lockscreen Vaktija.scriptable** from this repository.  
 2. Open the **Scriptable** app on your iPhone.  
 3. Tap the **+** button to create a new script.  
-4. Select **Import Script**, then choose **Vaktija.ba.scriptable**.  
+4. Select **Import Script**, then choose script you downloaded.  
 5. Save the script and add the widget to your home screen.  
 
 ### Manual Install  
-1. Open the file **Vaktija.ba.scriptable.js** or **Vaktija Mini Widget.scriptable.js** in this repository.  
+1. Open the file **Vaktija.ba.scriptable.js**, **Vaktija Mini Widget.scriptable.js** or **Lockscreen Vaktija.scriptable** in this repository.  
 2. Copy the entire content of the file.  
 3. Open the **Scriptable** app on your iPhone.  
 4. Tap the **+** button to create a new script.  
@@ -112,7 +121,7 @@ First, download the Scriptable app from the App Store: [Scriptable on App Store]
  2.  **Set up the widget:**
    
 	   -    Tap on the edit widget while in jiggle mode.
-	   -    Choose the script **"Vaktija.ba"** or **Vaktija Mini Widget"** from the list.
+	   -    Choose the script **"Vaktija.ba"**, **Vaktija Mini Widget"** or **Lockscreen Vaktija.scriptable** from the list.
 	   -    Ensure the **widget refreshes properly** by allowing background updates.
 
 ## Customization
@@ -126,15 +135,15 @@ You can modify the script inside **Scriptable** to adjust certain aspects:
 **⚠️ Note:** Ensure that any modifications follow Scriptable’s syntax rules to avoid errors.
 
 ### City codes
-You can find the available city codes here: https://api.vaktija.ba/vaktija/v1/lokacije
+You can find the available city codes here: [city-codes.md](city-codes.md) or on the official site of Vaktija.ba: https://api.vaktija.ba/vaktija/v1/lokacije 
+
 To change the city in the script, find your city ID from the link above and modify the following line in the script:
 
     const  CITY  =  "77";
 
 **City ID 77** is for **Sarajevo**.
 
-Replace `"77"` with the ID of your preferred city to display prayer times for that location.
-
+Replace `77` with the ID of your preferred city to display prayer times for that location.
 
 ## Issues
 
@@ -142,10 +151,9 @@ Replace `"77"` with the ID of your preferred city to display prayer times for th
 -   Widgets on iOS **refresh in the background every 15-30 minutes**, so real-time updates are not guaranteed.
 -   If the widget **doesn’t update**, manually open **Scriptable** and run the script to force a refresh.
 
-
-
 ## Credits
 
+### Author
 -   **Created by:** MuxBH28
 -   **Website:** [muxbh28.github.io](https://muxbh28.github.io)
 -   **Email:** sehicmuhammed7@proton.me
