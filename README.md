@@ -155,7 +155,7 @@ Replace `77` with the ID of your preferred city to display prayer times for that
 
 ### Author
 -   **Created by:** MuxBH28
--   **Website:** [muxbh28.github.io](https://msehic.com)
+-   **Website:** [msehic.com](https://msehic.com)
 -   **Email:** sehicmuhammed7@proton.me
 -   **GitHub:** [github.com/MuxBH28](https://github.com/MuxBH28)
 
